@@ -1,2 +1,1 @@
-# holbertonschool-low_level_programming
-C language
+README.md holbertonschool-low_level_programming
