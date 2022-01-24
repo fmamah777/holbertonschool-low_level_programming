@@ -1,3 +1,2 @@
 #!/usr/bin/env bash
-#C language scripting
 gcc -E $CFILE - o c 
