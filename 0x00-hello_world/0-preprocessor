@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-gcc -E $CFILE - o c 
+gcc -E $CFILE -o c 
