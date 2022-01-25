@@ -2,25 +2,25 @@
 #include <time.h>
 #include <stdio.h>
 /** 
- * main - main determines if a number is pos, 0, or neg. 
- *
- * %d: points to the number 
- * Return: returns 0 for success 
- */ 
+* main - main determines if a number is pos, 0, or neg. 
+*
+* %d: points to the number 
+* Return: returns 0 for success 
+*/ 
 int main(void)
 {
 int n; 
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 if (n > 0) 
-{ 
+{
 printf("%d is positive\n", n);
 }
 else if (n == 0) 
 {
 printf("%d is zero\n", n);
 }
-else 
+else
 {
 printf("%d is negative\n", n);
 }
