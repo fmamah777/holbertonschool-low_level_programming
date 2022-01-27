@@ -1,7 +1,6 @@
 #include "main.h"
-
 /**
- * times_table - will multiply by 9
+ * times_table -  multiply by 9
  *
  * Return (0)
  */
@@ -33,5 +32,6 @@ void times_table(void)
 	putchar((product % 10) + '0');
 }
 	putchar('\n');
+}
 }
 }
