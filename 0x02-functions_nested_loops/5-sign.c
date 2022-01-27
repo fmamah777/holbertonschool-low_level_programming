@@ -3,7 +3,7 @@
 /**
  * print_sign - check the code.
  *
- * @n: N is > 0 
+ * @n: N is > 0
  * Return: Always 0.
  */
 int print_sign(int n)
