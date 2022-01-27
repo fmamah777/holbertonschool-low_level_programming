@@ -5,7 +5,7 @@
  *
  * Return: Always 0.
  */
-int print_last_digit(int);
+int print_last_digit(int)
 {
 n = (n % 10);
 if (n >= 0)
