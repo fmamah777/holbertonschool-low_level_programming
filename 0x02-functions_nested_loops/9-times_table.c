@@ -10,10 +10,11 @@ void times_table(void)
 	int length;
 	int height;
 	int product;
-	for (length = 0; length <=9; length++)
+
+	for (length = 0; length <= 9; length++)
 	{
 	putchar('0');
-	for (height =1; height <= 9; height++)
+	for (height = 1; height <= 9; height++)
 	{
 	putchar('0');
 	for (height = 1; height <= 9; height++)
