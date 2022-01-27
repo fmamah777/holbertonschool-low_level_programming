@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * times_table -will multiply by 9
+ * times_table - will multiply by 9
  *
- * Return: Always (0)
+ * Return (0)
  */
 void times_table(void)
 {
