@@ -1,17 +1,16 @@
 #include "main.h"
 /**
- * times_table -  multiply by 9
+ * times_table -  multiplies by 9
  *
- * Return (0)
+ * return (0)
  */
 void times_table(void)
 {
-	int length;
-	int height;
-	int product;
-
-	for (length = 0; length <= 9; length++)
-	{
+int length;
+int height;
+int product;
+for (length = 0; length <= 9; length++)
+{
 	putchar('0');
 	for (height = 1; height <= 9; height++)
 	{
@@ -27,11 +26,11 @@ void times_table(void)
 }
 	else
 {
-	putchar((product / 10) + '0');
+putchar((product / 10) + '0');
 }
-	putchar((product % 10) + '0');
+putchar((product % 10) + '0');
 }
-	putchar('\n');
+putchar('\n');
 }
 }
 }
