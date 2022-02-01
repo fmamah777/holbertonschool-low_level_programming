@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
-  * positive_or_negative - determines a number's polarity
-  * Return: 0 (Success)
+  * positive_or_negative - 
+  * Return: 0 
+  *
   */
 void positive_or_negative(int n)
 {
