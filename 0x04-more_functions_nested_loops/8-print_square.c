@@ -1,24 +1,27 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * print_square - this prints a square the terminal with spaces.
- * @n: n is a parameter
- * Return: (void)
+ * print_square - Square
+ * @size: siz of square
+ * Return: void
  */
-
-void print_square(int n)
+void print_square(int size)
 {
-	int z;
-	int k;
+int x;
+int y;
 
-	for (z = 0; z < n; z++)
-	{
-		for (k = 0; k < n; k++)
-		{
-			_putchar('#');
-		}
-
-		_putchar('\n');
-	}
+if (size > 0)
+{
+for (x = 0; x < size; x++)
+{
+for (y = 0; y < size; y++)
+{
+_putchar('#');
+}
+_putchar('\n');
+}
+}
+else
+{
+_putchar('\n');
+}
 }
