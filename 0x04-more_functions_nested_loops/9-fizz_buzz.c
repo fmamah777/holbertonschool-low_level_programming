@@ -1,39 +1,35 @@
-#include <main.h>
-
+#include "main.h"
 /**
- * main -  this prints fizz buzz
- * Return: (0)
+ *  main - prints fizz buzz as the output.
+ *  Return: (0)
  */
-
 int main(void)
 {
-	int z;
+	int i;
 
-	for (z = 1; z <= 100; z++)
+	for (i = 1; i <= 100; i++)
 	{
-		if (z % 3 == 0 || z % 5 == 0)
+		if (i % 15 == 0)
 		{
-			if (z % 3 == 0)
-			{
-				printf("Fizz");
+			printf(" FizzBuzz");
+		}
+		else if (i % 3 == 0)
+		{
+			printf(" Fizz");
 			}
-			if (z % 5 == 0)
-			{
-				printf("Buzz");
+		else if (i % 5 == 0)
+		{
+		printf(" Buzz");
+		}
+		else if (i == 1)
+		{
+			printf("%d", i);
 			}
-		}
-		else
-		{
-			printf("%d", z);
-		}
-		if (z == 100)
-		{
-			printf("\n");
-
-		}
-		else
-		{
-			printf(" ");
-		}
-	}
+			else
+			{
+			printf(" %d", i);
+			}
+			}
+		printf("\n");
+	return (0);
 }
