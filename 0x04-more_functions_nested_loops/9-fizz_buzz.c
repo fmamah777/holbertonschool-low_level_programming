@@ -1,8 +1,8 @@
 #include "main.h"
 #include <stdio.h>
-
+ 
 /**
- * print_square - this prints a square the terminal with spaces.
+ *  - this prints a square the terminal with spaces.
  * @n: n is a parameter
  * Return: (void)
  */
@@ -10,7 +10,6 @@
 int main(void)
 {
 	int z;
-	int k;
 
 	for (z = 1; z <= 100; z++)
 	{
@@ -32,7 +31,11 @@ int main(void)
 		if (z == 100) 
 		{
 			printf("\n");
+			
 		}
-
+		else 
+		{
+			printf(" ");
+		}
 	}
 }
