@@ -1,10 +1,8 @@
-#include "main.h"
-#include <stdio.h>
- 
+#include <main.h>
+
 /**
- *  - this prints a square the terminal with spaces.
- * @n: n is a parameter
- * Return: (void)
+ * main -  this prints fizz buzz
+ * Return: (0)
  */
 
 int main(void)
@@ -19,21 +17,21 @@ int main(void)
 			{
 				printf("Fizz");
 			}
-			if ( z % 5 == 0)
+			if (z % 5 == 0)
 			{
 				printf("Buzz");
 			}
 		}
 		else
 		{
-			printf("%d",z);
+			printf("%d", z);
 		}
-		if (z == 100) 
+		if (z == 100)
 		{
 			printf("\n");
-			
+
 		}
-		else 
+		else
 		{
 			printf(" ");
 		}
