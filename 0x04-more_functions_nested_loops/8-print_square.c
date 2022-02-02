@@ -2,23 +2,22 @@
 #include <stdio.h>
 
 /**
- * print_diagonal - this prints a diagonal line in the terminal with spaces.
+ * print_square - this prints a square the terminal with spaces.
  * @n: n is a parameter
  * Return: (void)
  */
 
-void print_diagonal(int n)
+void print_square(int n)
 {
 	int z;
 	int k;
 
 	for (z = 0; z < n; z++)
 	{
-		for (k = 0; k < z; k++)
+		for (k = 0; k < n; k++)
 		{
-			_putchar(' ');
+			_putchar('#');
 		}
-		_putchar('\\');
 
 		_putchar('\n');
 	}
