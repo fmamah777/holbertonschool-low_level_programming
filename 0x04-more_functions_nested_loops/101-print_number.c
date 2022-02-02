@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * main - this function will print an integer
  *@n: will be printed as the integer in the terminal
