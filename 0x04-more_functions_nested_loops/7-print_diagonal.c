@@ -1,24 +1,28 @@
-#include "holberton.h"
+#include "main.h"
 /**
-  * print_diagonal - Entry Point
-  * @n: number of times print '_'
-  * Return: 0 (Success)
-  */
+ * print_diagonal - print diagonal
+ * @n: number
+ * Retrun: void
+ */
 void print_diagonal(int n)
 {
-	int i, j;
+int x;
+int y;
 
-	if (n <= 0)
+if (n > 0)
+{
+	for (x = 0; x < n; x++)
 	{
-		_putchar('\n');
-		return;
-	}
-
-	for (z = 0; z < n; z++)
-	{
-		for (k = 0; k < i; k++)
-			_putchar(' ');
-		_putchar('\\');
+		for (y = 0; y < x; y++)
+		{
+			_putchar(32);
+		}
+		_putchar(92);
 		_putchar('\n');
 	}
+}
+else
+{
+	_putchar('\n');
+}
 }
