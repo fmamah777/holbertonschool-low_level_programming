@@ -7,9 +7,10 @@
  */
 void print_number(int n)
 {
-	insigned int num, div =10;
+	unsigned int num, div = 10;
 
-	/* if negative number print -x and (n)
+	/*
+	 * if negative number print -x and (n)
 	 * then print each number that is there.
 	 * or else print whatever digit appears to be in front and iterate upwards.
 	 */
