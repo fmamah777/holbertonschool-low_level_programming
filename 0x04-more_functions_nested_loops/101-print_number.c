@@ -1,18 +1,17 @@
-#include "main.h"
 /**
- * print_number - this function will print an integer
- *@n: will be printed as the integer in the terminal
- * Return: 0
- */
+  * print_number - Entry Point
+  * @n: integer to be printed
+  * Return: 0 (Success)
+  */
 void print_number(int n)
 {
 	unsigned int num, div = 10;
 	/*
-	 * if negative number print -1 and (n)
-	 * then print each number that is there.
-	 * or else print whatever digit appears to be in front and iterate upwards.
+	 * if number is negative, print -1 then take abs(n)
+	 * recursively call this function to print each digit
+	 * or, print the front digit and then pass the rest to
+	 * the next iteration
 	 */
-
 	if (n < 0)
 	{
 		num = -n;
