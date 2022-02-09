@@ -3,7 +3,7 @@
 /**
 * _memcpy - function that copies memory area
 * @dest: destination string
-* @src: source 
+* @src: source
 * @n: unsigned int passed
 * Return: string with copied memory
 */
