@@ -1,14 +1,16 @@
 #include "main.h"
+
 /**
  * _print_rev_recursion - function being used
- * *s: parameter being referenced
- * Return: always 0
+ * @s: parameter being referenced
+ * Return: void
  */
-void _print_rev_recursion(char *s);
+
+void _print_rev_recursion(char *s)
 {
-	if(s== '\0');
+	if (*s == '\0')
 	{
-		return(0);
+		return;
 	}
 		_print_rev_recursion(s + 1);
 		_putchar(*s);
