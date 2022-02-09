@@ -5,7 +5,7 @@
 * @s: pointer
 * @b: 1st char being passed
 * @n: unsigned int passed
-* Return: return 
+* Return: return
 */
 
 char *_memset(char *s, char b, unsigned int n)
