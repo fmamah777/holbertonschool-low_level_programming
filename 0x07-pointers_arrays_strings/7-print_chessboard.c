@@ -2,7 +2,7 @@
 
 /**
 * print_chessboard - function that prints the chessboard
-* @a: pointer being used 
+* @a: pointer being used
 * Return: void
 */
 
