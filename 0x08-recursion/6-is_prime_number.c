@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
-  * is_prime - recursively determines if number is prime
-  * @n: returns if n is prime or not
-  * @i: iterator to track down the primality of n
-  * Return: int, 1 if true, 0 if false
+  * is_prime -  determines  prime number
+  * @n: returns if n is/is not prime
+  * @i: checks if prime
+  * Return: int, 1 or 0 true or not
   */
 int is_prime(int n, int i)
 {
@@ -18,8 +18,8 @@ int is_prime(int n, int i)
 
 /**
   * is_prime_number - determines if number is prime
-  * @n: determine if n is prime
-  * Return: int, 1 if true, 0 if false
+  * @n: determine if the n is prime
+  * Return: int, 1 if true, 0 if not
   */
 int is_prime_number(int n)
 {
