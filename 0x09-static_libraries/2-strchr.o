@@ -1,0 +1,7 @@
+#include "main.h"
+/**
+ * _strchr - main function
+*/
+char *_strchr(char *s, char c)
+{
+}

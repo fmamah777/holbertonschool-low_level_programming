@@ -1,0 +1,7 @@
+#include "main.h"
+/**
+* *_strcat - main function
+*/
+char *_strcat(char *dest, char *src)
+{
+}

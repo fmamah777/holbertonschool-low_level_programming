@@ -1,0 +1,8 @@
+#include "main.h"
+/**
+* _isupper - tells if file is uppercase
+*/
+
+int _isupper(int c)
+{
+}

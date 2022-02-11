@@ -1,0 +1,7 @@
+#include "main.h"
+/**
+ * _strspn - main function
+*/
+unsigned int _strspn(char *s, char *accept)
+{
+}

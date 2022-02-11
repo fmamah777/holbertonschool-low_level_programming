@@ -1,0 +1,7 @@
+#include "main.h"
+/**
+* _isdigit - checks to see if file is digit
+*/
+int _isdigit(int c)
+{
+}
