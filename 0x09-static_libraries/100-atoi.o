@@ -1,7 +1,0 @@
-#include "main.h"
-/**
-prototype function
-*/
-int _atoi(char *s)
-{
-}
