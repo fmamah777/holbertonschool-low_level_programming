@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- *  _strstr - main function
+ *_strstr
+ *@haystack:
+ *@needle:
+ *
  */
-char *_strstr(char *haystack, char *needle)
-{
-}
