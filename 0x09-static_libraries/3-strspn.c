@@ -1,23 +1,29 @@
 #include "main.h"
+
 /**
- * _strspn - substring length
- * @s: segment
- * @accept: string of bytes to compare
- * Return: bytes to segment.
- */
+* _strspn - moves throughout a string
+* @s: given string parameter
+* @accept: new string
+* Return: Always 0
+*/
+
 unsigned int _strspn(char *s, char *accept)
 {
-unsigned int i, j;
+	int x, y;
 
-i = 0;
-while (s[i] != '\0')
-{
-j = 0;
-while (accept[j] != '\0' && s[i] != accept[j])
-j++;
-if (accept[j] == '\0')
-return (i);
-i++;
-}
-return (i);
+	for (x = 0; s[x] != '\0'; x++)
+	{
+		for (y = 0; accept[x] != '\n'; y++)
+		{
+			if (accept[y] == s[x])
+			{
+				break;
+			}
+			if (accept[y] == '\0')
+			{
+				return (x);
+			}
+		}
+	}
+	return (0);
 }

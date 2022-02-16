@@ -1,8 +1,11 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
- * _isupper - tells if file is uppercase
- * @c: the variable that prints if uppercase
- * Return: 1 if uppercase, 0 otherwise
+ * _isupper - this function checks for uppercase characters.
+ *
+ * @c: - checks if C is uppercase.
+ * Return: 1 or 0 true false
  */
 
 int _isupper(int c)

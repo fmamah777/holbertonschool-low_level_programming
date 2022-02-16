@@ -1,28 +1,23 @@
 #include "main.h"
 
 /**
- * *_strcat - main function
- * @dest: variable
- * @src: variable
- * Return: 0
- */
+* _strcat - function to concatenate string
+* @dest: destination array
+* @src: source array
+* Return: dest array
+*/
 
 char *_strcat(char *dest, char *src)
 {
-	int i;
-	int destlen;
+	int x;
+	int destLength;
 
-	/* Gets the length of dest */
-	for (destlen = 0;  dest[destlen] != '\0'; destlen++)
+	for (destLength = 0; dest[destLength] != '\0'; destLength++)
 	{}
-	/* sets all of src at the end of dest */
-	for (i = 0 ; src[i] != '\0'; i++)
+	for (x = 0; src[x] != '\0'; x++)
 	{
-		dest[destlen + i] = src[i];
+		dest[destLength + x] = src[x];
 	}
-		dest[destlen + i] = '\0';
-	/* Set the null character at the end of dest */
-
+	dest[destLength + x] = '\0';
 	return (dest);
-
 }

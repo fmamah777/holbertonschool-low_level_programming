@@ -1,17 +1,20 @@
 #include "main.h"
+
 /**
- * _memset - primary function
- * @s: first variable
- * @b: second variable
- * @n: third variable
- * Return: void
- */
+* _memset - fills memory with a constant byte.
+* @s: pointer
+* @b: 1st char being passed
+* @n: unsigned int passed
+* Return: return
+*/
 
 char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int i;
+	unsigned int x;
 
-	for (i = 0; i < n; i++)
-		s[i] = b;
-	return (s);
+	for (x = 0; x < n ; x++)
+	{
+		s[x] = b;
+	}
+		return (s);
 }
