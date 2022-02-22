@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
   * string_nconcat - combines strings and the bytes from 2nd string
   * @s1: string pointed at
@@ -6,27 +7,40 @@
   * @n: number of bytes for 1st string
   * Return: char *
   */
+
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	/* declarations */
-	unsigned int i, j;
-	char *ptr;
+
+	char *concat;
+	unsigned int length = n;
+	unsigned int string;
 
 	if (s1 == NULL)
+	{
 		s1 = "";
+	}
 	if (s2 == NULL)
+	{
 		s2 = "";
-	for (i = 0; s1[i]; i++)
-	{}
-	for (j = 0; s2[j] && j < n; j++)
-	{}
-	ptr = malloc((i + j + 1) * sizeof(char));
-	if (ptr == NULL)
-		return (NULL);
-	for (i = 0; s1[i]; i++)
-		ptr[i] = s1[i];
-	for (j = 0; s2[j] && j < n; j++)
-		ptr[i + j] = s2[j];
-	ptr[i + j] = '\0';
-	return (ptr);
+	}
+	for (string = 0; s1[string]; string++)
+	{
+		length++;
+	}
+	concat = malloc(sizeof(char) * (length + 1));
+	if (concat == NULL)
+	{
+		ireturn NULL;
+	}
+	length = 0;
+	for (string = 0; s1[string]; string++)
+	{
+		concat[length++] = s1[string];
+	}
+	for (string = 0; s2[string] && string < n; string++)
+	{
+		concat[length++] = s2[string];
+	}
+	concat[length] = '\0';
+	return (concat);
 }
