@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
-
 /**
   * string_nconcat - combines strings and the bytes from 2nd string
   * @s1: string pointed at
