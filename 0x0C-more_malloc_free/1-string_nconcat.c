@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
-  * string_nconcat - combines strings and the bytes2
+  * string_nconcat - combines strings and the bytes from 2nd string
   * @s1: string pointed at
   * @s2: string pointed at with bytes
   * @n: number of bytes for 1st string
