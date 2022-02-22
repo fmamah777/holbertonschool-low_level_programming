@@ -1,34 +1,50 @@
 #include "main.h"
 
-
 /**
-  * string_nconcat - concatenates n bytes from string2
-  * @s1: string to be appended to
-  * @s2: string to have n bytes appended
-  * @n: number of bytes to append to string 1
-  * Return: char *
-  */
+* string_nconcat - entry point to concatenate 2 strings
+* @s1: string being evaluated
+* @s2: string being evaluated
+* @n: value being passed
+* Return: concatenated string
+*/
+
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	/* declarations */
-	unsigned int i, j;
+	unsigned int x, s1Length = strlen(s1);
+	unsigned int y = 0;
 	char *ptr;
 
-	if (s1 == NULL)
+	if (!s1)
+	{
 		s1 = "";
-	if (s2 == NULL)
+	}
+	if (!s2)
+	{
 		s2 = "";
-	for (i = 0; s1[i]; i++)
-	{}
-	for (j = 0; s2[j] && j < n; j++)
-	{}
-	ptr = malloc((i + j + 1) * sizeof(char));
-	if (ptr == NULL)
+	}
+
+	ptr = malloc(sizeof(*ptr) * s1Length + n + 1);
+
+	if (!ptr)
+	{
 		return (NULL);
-	for (i = 0; s1[i]; i++)
-		ptr[i] = s1[i];
-	for (j = 0; s2[j] && j < n; j++)
-		ptr[i + j] = s2[j];
-	ptr[i + j] = '\0';
+	}
+
+	for (x = 0; x < (s1Length + n); x++)
+	{
+		if (n >= strlen(s2))
+		{
+			n = strlen(s2);
+		}
+		if (x < s1Length)
+		{
+			ptr[x] = s1[x];
+		}
+		else
+		{
+			ptr[x] = s2[y++];
+		}
+	}
+	ptr[x] = '\0';
 	return (ptr);
 }
