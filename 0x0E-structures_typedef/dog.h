@@ -11,13 +11,12 @@
 typedef struct dog
 {
 	char *name;
+	char *owner;
 	float age;
-	char * owner;
 } dog_e;
 
-dog_e *new_dog(char *name, float age, char *owner);
+dog_e *new_dog(char *name, flo
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
-void free_dog(dog_t *d);
 
 #endif /* DOG_H */
