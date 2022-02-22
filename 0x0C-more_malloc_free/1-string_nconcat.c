@@ -1,45 +1,34 @@
 #include "main.h"
 
+
 /**
-  * string_nconcat - combines strings and the bytes from 2nd string
-  * @s1: string pointed at
-  * @s2: string pointed at with bytes
-  * @n: number of bytes for 1st string
+  * string_nconcat - concatenates n bytes from string2
+  * @s1: string to be appended to
+  * @s2: string to have n bytes appended
+  * @n: number of bytes to append to string 1
   * Return: char *
   */
-
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *concat;
-	unsigned int length = n;
-	unsigned int string;
+	/* declarations */
+	unsigned int i, j;
+	char *ptr;
 
 	if (s1 == NULL)
-	{
 		s1 = "";
-	}
 	if (s2 == NULL)
-	{
 		s2 = "";
-	}
-	for (string = 0; s1[string]; string++)
-	{
-		length++;
-	}
-	concat = malloc(sizeof(char) * (length + 1));
-	if (concat == NULL)
-	{
-		return NULL;
-	}
-	length = 0;
-	for (string = 0; s1[string]; string++)
-	{
-		concat[length++] = s1[string];
-	}
-	for (string = 0; s2[string] && string < n; string++)
-	{
-		concat[length++] = s2[string];
-	}
-	concat[length] = '\0';
-	return (concat);
+	for (i = 0; s1[i]; i++)
+	{}
+	for (j = 0; s2[j] && j < n; j++)
+	{}
+	ptr = malloc((i + j + 1) * sizeof(char));
+	if (ptr == NULL)
+		return (NULL);
+	for (i = 0; s1[i]; i++)
+		ptr[i] = s1[i];
+	for (j = 0; s2[j] && j < n; j++)
+		ptr[i + j] = s2[j];
+	ptr[i + j] = '\0';
+	return (ptr);
 }
