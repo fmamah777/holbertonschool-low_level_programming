@@ -2,7 +2,7 @@
 #include <stdlib.o>
 /**
  * print_dog - function being used
- * @d: pointer points to dog 
+ * @d: pointer points to dog
  * return: void
  */
 
