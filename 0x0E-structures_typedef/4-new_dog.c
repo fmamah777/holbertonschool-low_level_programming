@@ -1,10 +1,10 @@
 #include "dog.h"
 /**
- * new_dog - function name is new dog
- * @name: char name ?
+ * new_dog - creates new dog
+ * @name: char name
  * @age: float age
- * @owner: char is the owner
- * Return: Null if fails
+ * @owner: char owner
+ * Return: Null if fails, new_dog is works
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
