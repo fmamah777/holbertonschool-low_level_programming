@@ -1,4 +1,5 @@
 #include "dog.h"
+
 /**
  * new_dog - creates new dog
  * @name: char name
