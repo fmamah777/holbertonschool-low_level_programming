@@ -1,33 +1,18 @@
 #include "dog.h"
-/**
- * print_dog - primary function
- * @d: dog value holder
- * Return: element, NULL, nil or nothing
- */
+#include <stdio.h>
 
-#include "dog.h"                                                                                                 
-                                                                                                                 
-/**                                                                                                              
- * * print_dog - entry point for the function                                                                       
- * * @d: pointer to dog                                                                                             
- * * Return: void                                                                                                   
- * */                                                                                                               
-                                                                                                                 
-void print_dog(struct dog *d)                                                                                    
+/**
+  * print_dog - print a dog
+  * @d: pointer to dog struct
+  * Return: void
+  */
+void print_dog(struct dog *d)
 {
-	if (d != NULL)
-	{
-		if (d == NULL)
-		{
-			d->name = "(nil)";
-		}
-		printf("Name: %s\n", d->name);
-		printf("Age: %f\n", d->age);
-		if (d->owner == NULL)
-		{
-			d->owner = "(nil)";
-			printf("Owner: %s\n", d->owner);
-		}
-		else
-			return;                                                                                          
-} 
+	if (d == NULL)
+		return;
+	if (d->name == NULL)
+		d->name = "(nil)";
+	if (d->owner == NULL)
+		d->owner = "(nil)";
+	printf("Name: %s\nAge: %f\nOwner: %s\n", d->name, d->age, d->owner);
+}
