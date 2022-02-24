@@ -4,7 +4,7 @@
 * array_iterator - interates the array
 * @array: array used
 * @size: fuction size of the array ?
-* @action: pointer 
+* @action: pointer
 *Return: Void
 */
 
