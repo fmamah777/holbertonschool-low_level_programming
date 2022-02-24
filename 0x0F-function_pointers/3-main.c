@@ -2,7 +2,7 @@
 
 /**
 * main - beginning place
-* @argc: count 
+* @argc: count
 * @argv: the second count ?
 * Return: Always 0
 */

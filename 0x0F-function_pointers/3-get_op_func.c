@@ -3,7 +3,7 @@
 /**
 * get_op_func - function being used
 * @s: first parameter
-* Return: function or quit if null 
+* Return: function or quit if null
 */
 
 int (*get_op_func(char *s))(int, int)
