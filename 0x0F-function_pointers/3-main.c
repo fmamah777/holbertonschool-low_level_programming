@@ -1,10 +1,10 @@
 #include "3-calc.h"
 
 /**
-* main - entry point.  recieves operator and arguments
+* main - entry point and recieves operator and arguments
 * @argc: count of arguments
 * @argv: arguments
-* Return: Always 0
+* Return: 0
 */
 
 int main(int argc, char **argv)
