@@ -10,23 +10,24 @@
  * Return: pointer
  */
 
-int (*get_op_func(char *s))(int, int)
+int main(int argc, char **argv)
 {
-	op_t ops[] = {
-		{"+", op_add},
-		{"-", op_sub},
-		{"*", op_mul},
-		{"/", op_div},
-		{"%", op_mod},
-		{NULL, NULL}
-			};
-	int a = 0;
+	int x, y, (*func)(int, int);
 
-	while (ops[a].op != NULL)
+	if (argc != 4 || argv == NULL)
 	{
-		if (*(ops[a]).op == *s)
-			break;
-		a++;
+		printf("Error\n");
+		exit(98);
 	}
-	return (ops[a].f);
+	x = atoi(argv[1]);
+	y = atoi(argv[3]);
+	func = (*get_op_func)(argv[2]);
+
+	if (func == NULL || strlen(argv[2]) > 1)
+	{
+		printf("Error\n");
+		exit(99);
+	}
+	printf("%d\n", func(x,y));
+	return (0);
 }
