@@ -1,9 +1,16 @@
+#ifndef CALC_H
+#define CALC_H
+
+#include <stdio.h>
+#include <stdlib.h>
 #include "3-calc.h"
+
 /**
  * get_op_func - main function
  * @s: character
  * Return: pointer
  */
+
 int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
