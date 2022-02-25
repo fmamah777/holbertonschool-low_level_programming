@@ -1,26 +1,25 @@
-#ifndef CALC_H
-#define CALC_H
-
-/* calc functions */
-int op_add(int a, int b);
-int op_sub(int a, int b);
-int op_mul(int a, int b);
-int op_div(int a, int b);
-int op_mod(int a, int b);
-
-/* func selector */
-int (*get_op_func(char *s))(int, int);
-
+#include "3-calc.h"
 /**
- * struct op - Struct op
- *
- * @op: The operator
- * @f: The function associated
+ * get_op_func - main function
+ * @s: character
+ * Return: pointer
  */
-typedef struct op
+int (*get_op_func(char *s))(int, int)
 {
-	char *op;
-	int (*f)(int a, int b);
-} op_t;
-
-#endif /* CALC_H */
+	op_t ops[] = {
+		{"+", op_add},
+		{"-", op_sub},
+		{"*", op_mul},
+		{"/", op_div},
+		{"%", op_mod},
+		{NULL, NULL}
+			};
+	int a = 0;
+	while (ops[a].op != NULL)
+	{
+		if (*(ops[a]).op == *s)
+			break;
+		a++;
+	}
+	return (ops[a].f);
+}
