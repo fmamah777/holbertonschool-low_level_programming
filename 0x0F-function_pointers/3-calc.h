@@ -1,8 +1,8 @@
-#ifndef CALC_H
-#define CALC_H
+#ifndef FUNCTION_POINTERS_H
+#define FUNCTION_POINTERS_H
 #include <stdio.h>
 #include <stdlib.h>
-#include "3-calc.h"
+#include <string.h>
 
 /**
  * get_op_func - main function
@@ -10,24 +10,18 @@
  * Return: pointer
  */
 
-int main(int argc, char **argv)
+typedef struct op
 {
-	int x, y, (*func)(int, int);
+	char *op;
+	int (*f)(int a, int b);
+} op_t;
 
-	if (argc != 4 || argv == NULL)
-	{
-		printf("Error\n");
-		exit(98);
-	}
-	x = atoi(argv[1]);
-	y = atoi(argv[3]);
-	func = (*get_op_func)(argv[2]);
+int _putchar(char c);
+int op_add(int a, int b);
+int op_sub(int a, int b);
+int op_mul(int a, int b);
+int op_div(int a, int b);
+int op_mod(int a, int b);
+int (*get_op_func(char *s))(int, int);
 
-	if (func == NULL || strlen(argv[2]) > 1)
-	{
-		printf("Error\n");
-		exit(99);
-	}
-	printf("%d\n", func(x,y));
-	return (0);
-}
+#endif /* FUNCTION_POINTERS_H */
