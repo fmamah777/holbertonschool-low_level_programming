@@ -3,6 +3,7 @@
 /**
 * get_op_func - function being used
 * @s: first parameter
+* @int: integer
 * Return: function or quit if null
 */
 

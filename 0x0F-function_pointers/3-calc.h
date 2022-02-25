@@ -1,14 +1,16 @@
 #ifndef FUNCTION_POINTERS_H
 #define FUNCTION_POINTERS_H
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
 /**
- * get_op_func - main function
- * @s: character
- * Return: pointer
- */
+* struct op - function
+*
+* @op: parameter
+* @f: 2nd parameter
+*/
 
 typedef struct op
 {
@@ -24,4 +26,4 @@ int op_div(int a, int b);
 int op_mod(int a, int b);
 int (*get_op_func(char *s))(int, int);
 
-#endif /* CALC_H */
+#endif /* FUNCTION_POINTERS_H */

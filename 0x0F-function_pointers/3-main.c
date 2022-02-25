@@ -1,7 +1,7 @@
 #include "3-calc.h"
 
 /**
-* main - entry point and recieves operator and arguments
+* main - function being used
 * @argc: count of arguments
 * @argv: arguments
 * Return: 0
