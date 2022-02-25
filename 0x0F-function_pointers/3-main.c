@@ -1,9 +1,9 @@
 #include "3-calc.h"
 
 /**
-* main - beginning place
-* @argc: count
-* @argv: the second count ?
+* main - entry point.  recieves operator and arguments
+* @argc: count of arguments
+* @argv: arguments
 * Return: Always 0
 */
 

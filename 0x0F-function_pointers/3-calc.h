@@ -1,6 +1,5 @@
 #ifndef CALC_H
 #define CALC_H
-
 #include <stdio.h>
 #include <stdlib.h>
 #include "3-calc.h"
@@ -22,6 +21,7 @@ int (*get_op_func(char *s))(int, int)
 		{NULL, NULL}
 			};
 	int a = 0;
+
 	while (ops[a].op != NULL)
 	{
 		if (*(ops[a]).op == *s)
