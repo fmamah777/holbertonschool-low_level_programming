@@ -1,10 +1,9 @@
 #include "3-calc.h"
 
 /**
-* get_op_func - function being used
-* @s: first parameter
-* @int: integer
-* Return: function or quit if null
+* get_op_func - selects proper function
+* @s: input character
+* Return: function pointer or exit if error
 */
 
 int (*get_op_func(char *s))(int, int)
@@ -25,6 +24,5 @@ int (*get_op_func(char *s))(int, int)
 		break;
 		x++;
 	}
-
 	return (ops[x].f);
 }
