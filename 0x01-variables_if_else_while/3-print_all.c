@@ -43,4 +43,3 @@ void print_s(va_list ag, char *sep)
 		str = "(nil)";
 	printf("%s%s", sep, str);
 }
-
