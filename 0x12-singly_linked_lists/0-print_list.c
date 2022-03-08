@@ -1,10 +1,10 @@
 #include "lists.h"
 
 /**
- * print_list function being used
- * @h: first paramter in the function
- * Return: node
- */
+  * print_list - function neing uused
+  * @h: second parameter
+  * Return: node size
+  */
 
 size_t print_list(const list_t *h)
 {
