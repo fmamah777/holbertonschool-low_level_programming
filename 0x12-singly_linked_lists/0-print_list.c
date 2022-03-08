@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * * print_list function being used
+ * print_list function being used
  * @h: first paramter in the function
  * Return: node
  */
