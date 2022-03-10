@@ -5,7 +5,7 @@
 /**
  * add_nodeint - funtion being used. adds node at start of a list
  * @head: pointer to liost
- * :n second paramter
+ * :@n second paramter
  * Return: returns new element
  */
 
