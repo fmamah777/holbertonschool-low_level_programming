@@ -9,8 +9,9 @@
 
 int sum_listint(listint_t *head)
 {
-	nt nodesum = 0;
-while (head)
+	int nodesum = 0;
+
+	while (head)
 {
 	nodesum = nodesum + head->n;
 	if (head->next)
