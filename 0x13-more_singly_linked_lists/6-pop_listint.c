@@ -3,10 +3,10 @@
 #include "lists.h"
 
 /**
-* pop_listint - funtion being used deletes head node of linked list
-* @head: ppointer to list
-* Return: returns head node i think
-*/
+ * pop_listint - funtion being used deletes head node of linked list
+ * @head: pointer to list
+ * Return: returns head node i
+ */
 
 int pop_listint(listint_t **head)
 {
