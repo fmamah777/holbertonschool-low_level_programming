@@ -1,4 +1,5 @@
-#include "holberton.h"
+#include "main.h"
+#include <stdio.h>
 
 /**
  * flip_bits - function being used to return bit numbers
@@ -12,7 +13,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	unsigned int count = 0;
 	unsigned long int z = n ^ m;
 
-	while (i)
+	while (z)
 	{
 		count += z & 1;
 		z >>= 1;
