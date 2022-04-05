@@ -15,8 +15,3 @@ void free_dlistint(dlistint_t *head)
 		free(temp);
 	}
 }
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-
